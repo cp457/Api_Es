@@ -1,5 +1,6 @@
 package com.example.esapi
 
+import android.annotation.SuppressLint
 import android.util.Log
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
@@ -9,6 +10,7 @@ import okhttp3.Response
 
 class AuthorizationInterceptor : Interceptor {
 
+        @SuppressLint("SuspiciousIndentation")
         override fun intercept(chain: Interceptor.Chain): Response {
             val client = OkHttpClient()
 
